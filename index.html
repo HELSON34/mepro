@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>PROJET METU DA2I</title>
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            }
+
+            body{
+                background: url(C:\Users\HP OMEN\Desktop\HTML\1.png);
+                height: 100vh;
+                color: white;
+            }
+
+
+            header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 60px;
+                background: rgba(0,0, 0, 0.6);
+            }
+
+            .logo{
+                color: olivedrab;
+                font-size: 22px;
+                font-weight: bold;
+            }
+
+            nav a{
+                margin: 0;
+                text-decoration: none;
+                color: antiquewhite;
+                font-weight: bold;
+            }
+
+            .search input{
+                padding: 6px;
+            }
+
+            .search button{
+                background: olivedrab;
+                border: none;
+                padding: 6px 12px;
+                cursor: pointer;
+            }
+
+            .main{
+                display: flex;
+                background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(ss.jpg);
+                width: 100%;
+                background-position: center;
+                background-size: cover;
+                height: 100vh;
+                justify-content: flex-start;
+                align-items: normal;
+                margin-top: 80px;
+            }
+
+            .text{
+                width: 40%;
+            }
+
+            .text h1{
+                font-size: 40px;
+            }
+
+            .text span{
+                color: olivedrab;
+            }
+
+            .text button{
+                padding: 10px;
+                background: olivedrab;
+                border: none;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+
+            .login{
+                background: rgba(0,0, 0,0.8);
+                padding: 30px;
+                border-radius: 10px;
+                width: 260px;
+            }
+
+            .login h3{
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            .login input{
+                width: 100%;
+                margin: 10px o;
+                padding: 8px;
+            }
+
+            .login button{
+                width: 100%;
+                padding: 10px;
+                background: olivedrab;
+                border: none;
+                cursor: pointer;
+            }
+
+
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <h2 class="logo">PROJET METU DA2I</h2>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="About">About</a>
+                <a href="Membres.html">Membres</a>
+                <a href="Projet.html">Projet</a>
+                <a href="Contact">Contact</a>
+            </nav
+            <div class="search">
+                <input type="text" id="searchbox" placeholder="search">
+                <button onclick="search()">search</button>
+            </div>
+        </header>
+
+        <section class="main">
+            <div class="text">
+                <h1>SITE WEB DES<br><span>ETUDIANTS INFORMATIQUE</span></h1>
+                <p>
+                    Nous sommes un groupe de dix étudiants en informatique<br>
+                    Nous sommes tous ensemble pour progresse notre niveau
+                </p>
+                <button onclick="join()">join us</button>
+            </div>
+
+           
+        </section>
+
+
+        <script>
+            function search(){
+                let text=document.getElementById("searchbox").value;alert("recherche:"+text);
+            }
+            function join(){
+                alert("Bienvenue dans PROJET METU DA2I");
+            }
+            function login(){
+                alert("connection reussie !")
+            }
+        </script>
+    </body> 
+</html>>
